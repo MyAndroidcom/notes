@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component name="dataSourceStorage">
+  <data-source name="MySQL - scm@localhost" uuid="4d3debc8-a86f-4895-baea-62cb2755ce88">
+    <database-info product="MySQL" version="5.5.40" jdbc-version="4.0" driver-name="MySQL Connector Java" driver-version="mysql-connector-java-5.1.35 ( Revision: 5fb9c5849535c13917c2cf9baaece6ef9693ef27 )">
+      <extra-name-characters>#@</extra-name-characters>
+      <identifier-quote-string>`</identifier-quote-string>
+    </database-info>
+    <case-sensitivity plain-identifiers="lower" quoted-identifiers="lower"/>
+    <database-model serializer="dbm" rdbms="MYSQL" format-version="2.6">
+      <schema id="1" name="scm">
+        <visible>1</visible>
+      </schema>
+      <schema id="2" name="information_schema"/>
+      <schema id="3" name="mybatis"/>
+      <schema id="4" name="mydb1"/>
+      <schema id="5" name="mysql"/>
+      <schema id="6" name="performance_schema"/>
+      <schema id="7" name="spring_demo"/>
+      <schema id="8" name="taotao"/>
+      <schema id="9" name="test"/>
+      <table id="10" parent="1" name="account"/>
+      <table id="11" parent="1" name="goods"/>
+      <table id="12" parent="1" name="store_house"/>
+      <table id="13" parent="1" name="supplier"/>
+      <column id="14" parent="10" name="acc_id">
+        <mandatory>1</mandatory>
+        <data-type>int(11)|0</data-type>
+        <sequence-identity>1</sequence-identity>
+      </column>
+      <column id="15" parent="10" name="acc_login">
+        <data-type>varchar(20)|0</data-type>
+      </column>
+      <column id="16" parent="10" name="acc_name">
+        <data-type>varchar(20)|0</data-type>
+      </column>
+      <column id="17" parent="10" name="acc_pass">
+        <data-type>varchar(20)|0</data-type>
+      </column>
+      <key id="18" parent="10" name="PRIMARY">
+        <columns>acc_id</columns>
+        <primary>1</primary>
+      </key>
+      <column id="19" parent="11" name="goods_Id">
+        <mandatory>1</mandatory>
+        <data-type>varchar(36)|0</data-type>
+      </column>
+      <column id="20" parent="11" name="goods_name">
+        <data-type>varchar(20)|0</data-type>
+      </column>
+      <column id="21" parent="11" name="goods_unit">
+        <data-type>varchar(10)|0</data-type>
+      </column>
+      <column id="22" parent="11" name="goods_type">
+        <data-type>varchar(10)|0</data-type>
+      </column>
+      <column id="23" parent="11" name="goods_color">
+        <data-type>varchar(10)|0</data-type>
+      </column>
+      <column id="24" parent="11" name="goods_store">
+        <data-type>int(11)|0</data-type>
+      </column>
+      <column id="25" parent="11" name="goods_limit">
+        <data-type>int(11)|0</data-type>
+      </column>
+      <column id="26" parent="11" name="goods_commission">
+        <data-type>decimal(2,2)|0</data-type>
+      </column>
+      <column id="27" parent="11" name="goods_producer">
+        <data-type>varchar(50)|0</data-type>
+      </column>
+      <column id="28" parent="11" name="goods_remark">
+        <data-type>varchar(100)|0</data-type>
+      </column>
+      <column id="29" parent="11" name="goods_sel_price">
+        <data-type>decimal(12,2)|0</data-type>
+      </column>
+      <column id="30" parent="11" name="goods_buy_price">
+        <data-type>decimal(12,2)|0</data-type>
+      </column>
+      <key id="31" parent="11" name="PRIMARY">
+        <columns>goods_Id</columns>
+        <primary>1</primary>
+      </key>
+      <column id="32" parent="12" name="sh_id">
+        <mandatory>1</mandatory>
+        <data-type>varchar(10)|0</data-type>
+      </column>
+      <column id="33" parent="12" name="sh_name">
+        <data-type>varchar(20)|0</data-type>
+      </column>
+      <column id="34" parent="12" name="sh_responsible">
+        <data-type>varchar(20)|0</data-type>
+      </column>
+      <column id="35" parent="12" name="sh_phone">
+        <data-type>varchar(11)|0</data-type>
+      </column>
+      <column id="36" parent="12" name="sh_address">
+        <data-type>varchar(50)|0</data-type>
+      </column>
+      <column id="37" parent="12" name="sh_type">
+        <data-type>varchar(10)|0</data-type>
+      </column>
+      <column id="38" parent="12" name="sh_remark">
+        <data-type>varchar(100)|0</data-type>
+      </column>
+      <key id="39" parent="12" name="PRIMARY">
+        <columns>sh_id</columns>
+        <primary>1</primary>
+      </key>
+      <column id="40" parent="13" name="sup_id">
+        <mandatory>1</mandatory>
+        <data-type>int(11)|0</data-type>
+      </column>
+      <column id="41" parent="13" name="sup_name">
+        <data-type>varchar(20)|0</data-type>
+      </column>
+      <column id="42" parent="13" name="sup_linkman">
+        <data-type>varchar(20)|0</data-type>
+      </column>
+      <column id="43" parent="13" name="sup_phone">
+        <data-type>varchar(11)|0</data-type>
+      </column>
+      <column id="44" parent="13" name="sup_address">
+        <data-type>varchar(100)|0</data-type>
+      </column>
+      <column id="45" parent="13" name="sup_remark">
+        <data-type>varchar(100)|0</data-type>
+      </column>
+      <column id="46" parent="13" name="sup_pay">
+        <data-type>decimal(12,2)|0</data-type>
+      </column>
+      <column id="47" parent="13" name="sup_type">
+        <data-type>varchar(10)|0</data-type>
+      </column>
+      <key id="48" parent="13" name="PRIMARY">
+        <columns>sup_id</columns>
+        <primary>1</primary>
+      </key>
+    </database-model>
+  </data-source>
+</component>

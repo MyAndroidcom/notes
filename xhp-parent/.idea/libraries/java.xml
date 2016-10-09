@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="java">
+    <CLASSES>
+      <root url="file://F:/taoato_pro23/maven/repo" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="file://$PROJECT_DIR$/Scm/src/main/java" />
+    </SOURCES>
+    <jarDirectory url="file://F:/taoato_pro23/maven/repo" recursive="false" />
+  </library>
+</component>
