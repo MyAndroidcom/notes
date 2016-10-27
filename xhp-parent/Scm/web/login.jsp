@@ -2,7 +2,7 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
 <html>
 <head>
-<%@ include file="/common/common.jspf"%>
+<%@ include file="./common/common.jspf"%>
 <title>Login page</title>
 </head>
 <body>

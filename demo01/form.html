@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>submit_form</title>
+</head>
+<body>
+        <form action="demo01.html" method = "post">
+            <input type="button" value="提交"/>
+            </form>
+        <!--演示使用js提交表单-->
+    <script type="text/javascript">
+        var inputElement = document.getElementsByTagName("input")[0];
+        inputElement.onclick = function () {
+            //定位form标签,forms表示document对象中所有表单的集合，通过下标引用不同的表单，从0开始
+            var formElement = document.forms[0];
+            formElement.submit();
+        }
+        </script>
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Register</title>
+</head>
+<body>
+    <form>
+        用户名:<input id="usernameID" type="text" name="username" maxlength="4"/>
+        光标移除后，立即检查结果...
+        </form>
+    <hr/>
+    <span id="resID"></span>
+
+    <script type="text/javascript">
+        //创建ajax异步对象
+        function createAjax() {
+            var ajax = null;
+            try {
+                ajax = new ActiveXObject("microsoft.xmlhttp");
+            }catch (e1){
+                try{
+                    ajax = new XMLHttpRequest();
+                }catch (e2){
+                    alert("你的浏览器不支持AJAX。。。");
+                }
+            }
+            return ajax;
+        }
+        </script>
+    <script type="text/javascript">
+        //定位获取事件
+        document.getElementById("usernameID").onblur = function () {
+            var username = this.value();
+            if(username.length==0){
+                //提示
+                document.getElementById("resID").innerHTML="用户名必须填写";
+            }else {
+                username=encodeURI(username);
+            }
+        }
+        </script>
+</body>
+</html>

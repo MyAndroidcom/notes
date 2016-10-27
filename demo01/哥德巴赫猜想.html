@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <title>Document</title>
+</head>
+<body>
+        <script type="text/javascript">
+
+        for(var i=1;i<100;i++){
+            if(panduanshifoushizhishu(i)&&panduanshifoushizhishu(100-i)){
+                console.log("100可以表示为:"+i+"与"+100-i+"的和");
+            }
+        }
+
+
+            //判断一个数的因数个数
+            function yishugeshu(num) {
+                var sum = 0;
+                for(var i = 1;i <= num;i++){
+                    if(num % i != 0){
+                        sum++;
+                    }
+                }
+                return sum;
+            }
+
+            function panduanshifoushizhishu(a) {
+                if(yishugeshu(a)==2){
+                    return true;
+                }else {
+                    return false;
+                }
+            }
+            </script>
+</body>
+</html>
